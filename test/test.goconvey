@@ -1,0 +1,2 @@
+-gcflags
+all=-l -N
