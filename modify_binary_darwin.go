@@ -18,7 +18,7 @@ func modifyBinary(target uintptr, bytes []byte) {
 	if res != 0 {
 		panic(fmt.Errorf("failed to write memory, code %v", res))
 	}
-	<-time.After(100 * time.Microsecond)
+	<-time.After(500 * time.Microsecond)
 }
 
 //go:cgo_import_dynamic mach_task_self mach_task_self "/usr/lib/libSystem.B.dylib"
